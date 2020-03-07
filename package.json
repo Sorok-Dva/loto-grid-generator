@@ -1,0 +1,10 @@
+{
+  "name": "loto-grid-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Сорок два"
+}
