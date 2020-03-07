@@ -1,16 +1,16 @@
-#LOTO-GRID-GENERATOR
+# LOTO-GRID-GENERATOR
 
-##Loto Rules
+## Loto Rules
 To play LOTO, you just have to select 6 numbers: 5 numbers on a grid of 49 numbers (from 1 to 49) and 1 lucky number on a grid of 10 numbers (from 1 to 10). 
 You win the jackpot if you have 5 winning numbers and the complementary number.
 
-##How this program works
+## How this program works
 This program will generate N random games of loto defined on your own settings (see configuration section).
 Then it will returns you a final grid based on the most numbers that appears in the previous games.
 
 This method will not increase at all the chances to win, but it's a funny way to play loto when we don't know which numbers to play.
 
-##Configuration
+## Configuration
 You can edit LOTO rules as you want with the `opts` object.
 Here is the default options : 
 ```javascript
@@ -21,7 +21,7 @@ let opts = {
 };
 ```
 
-##Start
+## Start
 ```bash
 npm start
 ```
@@ -56,7 +56,7 @@ Will play 5 games.
 
 You can adjust play count in the play method call : 
 
-###Example 1
+### Example 1
 ```javascript
 play(15);
 ```
@@ -130,7 +130,7 @@ Will results
 ```
 
 You can adjust play count in the play method call : 
-###Example 2
+### Example 2
 ```javascript
 play(5, { playLuckyNumbers: false });
 ```
@@ -162,7 +162,7 @@ Will results
 // Luck Numbers : false
 /////////////////////////////////////////
 ```
-###Example 3
+### Example 3
 ```javascript
 play(5, { 
   playLuckyNumbers: true, 
