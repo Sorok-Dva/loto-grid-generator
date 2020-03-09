@@ -1,6 +1,5 @@
 const numbers = [...Array(50).keys()].slice(1);
 const bonus = [...Array(11).keys()].slice(1);
-
 let playCount = 0;
 
 const play = (count, opts) => {
@@ -83,7 +82,12 @@ let sortFinalNumbers = (type, games, opts) => {
   if (type === 'main') sortable.splice(opts.numbersMaxSelection);
   if (type === 'luck') sortable.splice(opts.luckMaxSelection);
 
+  console.log(`// Sorting ${type} numbers.`);
+  sortable.map(v => console.log(`// - ${v[0]} : ${v[1]} occurences`));
   return sortable.map(v => parseInt(v[0]));
 };
 
-play(5, { playLuckyNumbers: true, numbersMaxSelection: 2, luckMaxSelection: 2 });
+let argv = process.argv.slice(2)[0] !== undefined
+  ? parseInt(process.argv.slice(2)[0].split('--count=')[1]) : null;
+
+play(argv || 5);
