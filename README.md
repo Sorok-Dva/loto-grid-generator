@@ -182,3 +182,26 @@ Will results something like
 // Luck Numbers : [ 4, 1 ]
 /////////////////////////////////////////
 ```
+
+### Example 4 (1 million games)
+
+```
+[...]
+//-------------------------------------//
+// Game played. (#1000000)
+// Results : [ 20, 49, 33, 12, 19, 8 ]
+//-------------------------------------//
+// Sorting main numbers.
+// - 18 : 102866 occurences
+// - 36 : 102522 occurences
+// - 15 : 102486 occurences
+// - 2 : 102368 occurences
+// - 19 : 102358 occurences
+// Sorting luck numbers.
+// - 3 : 100544 occurences
+/////////////////////////////////////////
+// Generated Grid (based on most numbers that appears).
+// Main Numbers : [ 18, 36, 15, 2, 19 ]
+// Luck Numbers : [ 3 ]
+/////////////////////////////////////////
+```
